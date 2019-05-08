@@ -1,7 +1,6 @@
 <head>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway:400,600|Roboto+Mono:300i" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="css/text.css" rel="stylesheet">
     <style>
@@ -87,19 +86,10 @@
             font-size: 48px;
             letter-spacing: 6px;
         }
-        .date {
-            text-align: center;
-            padding-bottom: 20px;
-            font-family: 'Raleway';
-            font-weight: bold;
-            font-size: 1.2em;
-            font-color: #555555;
-        }
     </style></head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.1.8/imagesloaded.pkgd.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.1/masonry.pkgd.min.js"></script>
-<script src="js/moment.js"></script>
 <body>
 <div class="container">
     <div class="row">
@@ -108,7 +98,6 @@
                 <a href="#" id="logo">EVENTS</a>
             </div>
             <hr>
-            <div class="date"><span id="date"></span> - try resizing the window</div>
             <div class="col-*-*"></div>
         </div>
     </div>
@@ -282,6 +271,3 @@
     for(x=0;x<allItems.length;x++){
         imagesLoaded( allItems[x], resizeInstance);
     }</script>
-<script>var now = moment().format("dddd, MMMM Do, YYYY");
-// Saturday, June 9th, 2007, 5:46:21 PM
-$('#date').append(now);</script>

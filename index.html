@@ -15,16 +15,21 @@
 
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway:400,600|Roboto+Mono:300i" rel="stylesheet">
 
   <style>
 * { box-sizing: border-box; }
 
-body { font-family: sans-serif; }
+body { font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+background-color: #343A40;
+color: #A9A9A9;
+}
 
 /* ---- grid ---- */
 
 .grid {
-  background: #DDD;
+  /*background: #DDD;*/
   max-width: 1200px;
 }
 
@@ -42,7 +47,7 @@ body { font-family: sans-serif; }
   width: 100px;
   height: 100px;
   margin-bottom: 20px;
-  background: #0D8;
+  background: #a9a9a9;
   border: 2px solid #333;
   border-color: hsla(0, 0%, 0%, 0.7);
 }
@@ -51,16 +56,37 @@ body { font-family: sans-serif; }
 .grid-item--height2 { height: 220px; }
 
 .card-body {
-  background-color: #59A5D8;
+  background-color: #F5F5F5;
 }
 .card-header {
-  background-color: #133C55;
-  color: white;
+  background-color: #fec830;
+    text-align: center;
+  color: #000000;
 }
 .card-footer {
-  background-color: #84D2F6;
+  background-color: #1F1F21;
 }
+      .navbar-brand {
+          font-family: 'Montserrat', sans-serif;
+          letter-spacing: 2px;
+          text-shadow: 2px 2px 4px #000000;
+      }
+      .card-text {
+          font-family: 'Raleway', sans-serif;
+          letter-spacing: 2px;
+          color: #343A40;
+          text-align: center;
+      }
+      .my-4 {
+          text-align: center;
+          font-family: 'Roboto Mono', monospace;
+          text-shadow: 2px 2px 7px #000000;
+      }
+      .btn-info {
+
+      }
 </style>
+
 </head>
 
 <body>
@@ -75,24 +101,22 @@ body { font-family: sans-serif; }
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="#">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="services.html">Events</a>
+            <a class="nav-link" href="index2.html">Events</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="#">Contact</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Portfolio
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-              <a class="dropdown-item" href="portfolio-1-col.html">1 Column Portfolio</a>
-              <a class="dropdown-item" href="portfolio-2-col.html">2 Column Portfolio</a>
-              <a class="dropdown-item" href="portfolio-3-col.html">3 Column Portfolio</a>
-              <a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
-              <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
+              <a class="dropdown-item" href="#">1 Column Portfolio</a>
+              <a class="dropdown-item" href="#">2 Column Portfolio</a>
+              <a class="dropdown-item" href="#">Single Portfolio Item</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -100,9 +124,9 @@ body { font-family: sans-serif; }
               Blog
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-              <a class="dropdown-item" href="blog-home-1.html">Blog Home 1</a>
-              <a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>
-              <a class="dropdown-item" href="blog-post.html">Blog Post</a>
+              <a class="dropdown-item" href="#">Blog Home 1</a>
+              <a class="dropdown-item" href="#">Blog Home 2</a>
+              <a class="dropdown-item" href="#">Blog Post</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -110,11 +134,11 @@ body { font-family: sans-serif; }
               Other Pages
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-              <a class="dropdown-item" href="full-width.html">Full Width Page</a>
-              <a class="dropdown-item" href="sidebar.html">Sidebar Page</a>
-              <a class="dropdown-item" href="faq.html">FAQ</a>
-              <a class="dropdown-item" href="404.html">404</a>
-              <a class="dropdown-item" href="pricing.html">Pricing Table</a>
+              <a class="dropdown-item" href="#">Full Width Page</a>
+              <a class="dropdown-item" href="#">Sidebar Page</a>
+              <a class="dropdown-item" href="#">FAQ</a>
+              <a class="dropdown-item" href="#">404</a>
+              <a class="dropdown-item" href="#">Pricing Table</a>
             </div>
           </li>
         </ul>
@@ -133,8 +157,7 @@ body { font-family: sans-serif; }
         <!-- Slide One - Set the background image for this slide in the line below -->
         <div class="carousel-item active" style="background-image: url('bg.jpg')">
           <div class="carousel-caption d-none d-md-block">
-            <h3>Coastal Events</h3>
-            <p>What's happening in Grays Harbor</p>
+
           </div>
         </div>
         <!-- Slide Two - Set the background image for this slide in the line below -->
@@ -162,7 +185,7 @@ body { font-family: sans-serif; }
   <!-- Page Content -->
   <div class="container">
 
-    <h1 class="my-4">Welcome to Coastal Currents</h1>
+    <h1 class="my-4">your guide to what's happening...</h1>
 
     <!-- Marketing Icons Section -->
     <div class="row">
@@ -185,7 +208,7 @@ body { font-family: sans-serif; }
             <p class="card-text">Learn from the hunting, fishing, and camping experts with how-to-seminars, product demonstrations offering tips, techniques and the latest gear. Visitors and lifelong residents alike will learn more about what Coastal Washington and the Olympic Peninsula have to offer.</p>
           </div>
           <div class="card-footer">
-            <center><B>May 4th, 2019</B>
+            <B>May 4th, 2019</B>
           </div>
         </div>
       </div>
@@ -196,9 +219,9 @@ body { font-family: sans-serif; }
             <p class="card-text">Free family event for the community.
 Fun filled day loaded with healthy activities, prizes, free T-Shirts, and educational booths.</p>
           </div>
-          <div class="card-footer"><center>
-            <a href="#" class="btn btn-primary">Learn More</a>
-
+          <div class="card-footer"><div class="col text-center">
+            <a href="#" class="btn btn-info">Learn More</a>
+          </div>
           </div>
         </div>
       </div>
@@ -212,7 +235,7 @@ Fun filled day loaded with healthy activities, prizes, free T-Shirts, and educat
     <!-- Call to Action Section -->
     <div class="row mb-4">
       <div class="col-md-8">
-        <p>Learn more about what we do here.</p>
+        <p>Learn more about what we do here.<span id="date"></span></p>
       </div>
       <div class="col-md-4">
         <a class="btn btn-lg btn-secondary btn-block" href="#">More Information</a>
@@ -232,7 +255,7 @@ Fun filled day loaded with healthy activities, prizes, free T-Shirts, and educat
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
-  <scipt src="js/isotope.pkgd.js"></scipt>
+  <script src="js/isotope.pkgd.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script>
   $('.grid').isotope({
@@ -244,6 +267,9 @@ Fun filled day loaded with healthy activities, prizes, free T-Shirts, and educat
 });
 
   </script>
+<script>var now = moment().format("dddd, MMMM Do, YYYY, h:MM:ss A");
+// Saturday, June 9th, 2007, 5:46:21 PM
+$('#date').append(now);</script>
 </body>
 
 </html>
